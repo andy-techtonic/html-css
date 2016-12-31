@@ -1,0 +1,143 @@
+body {
+  background: lightgray;
+  padding: 15px;
+}
+
+#carousel, .carousel-inner {
+  height: 400px;
+
+  /*overflow: hidden;*/
+}
+
+.carousel .carousel-item, .carousel .carousel .active {
+  height: 400px;
+}
+
+hr {
+  clear: both;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:100px 40px 350px auto 100px;
+  grid-template-areas:"header header header header header header"
+                      "nav nav nav nav nav nav"
+                      "car car car car sum sum"
+                      "news news blog blog form form"
+                      "foot foot foot foot foot foot";
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  background: darkOliveGreen;
+  justify-content: space-between;
+}
+.site-title, .search-etc {
+  margin: 15px;
+}
+.links {
+  text-align: right;
+}
+.links a {
+  margin-left: 15px;
+}
+.search {
+  margin-top: 10px;s
+}
+.search input {
+  margin-right: 10px;
+}
+nav {
+  grid-area: nav;
+  background: sienna;
+  font-weight: bold;
+}
+.car {
+  grid-area: car;
+  background: goldenrod;
+}
+summary {
+  grid-area: sum;
+}
+.newsletter {
+  grid-area: news;
+  background: burlyWood;
+}
+.blog {
+  grid-area: blog;
+  background: darkCyan;
+}
+
+.blog-form {
+  grid-area: form;
+  background: cornFlowerBlue;
+}
+
+.blog-heading {
+  margin-bottom: 10px;
+}
+footer {
+  grid-area: foot;
+  background: oliveDrab;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+nav li {
+  margin-right:;
+  list-style-type: none;
+  padding: 5px 15px;
+  border-right: 1px solid gray;
+}
+
+.block {
+  margin:;
+  padding:25px;
+  border-top: 2px solid black;
+}
+
+.newsletter h2 {
+  display: inline;
+}
+
+.newsletter img {
+  width: 100%;
+  border: 1px solid gray;
+}
+summary.block {
+  border: none;
+}
+
+.blog.block {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.blog img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 7px 15px 10px 0px;
+}
+
+.read-more {
+  float: right;
+}
+
+.blog-form input {
+  width: 50%;
+  margin-bottom: 10px;
+  display: block;
+}
+
+footer span {
+  margin-right: 8px;
+}
