@@ -1,22 +1,32 @@
 body {
   background: lightgray;
   padding: 15px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-#carousel, .carousel-inner {
-  height: 400px;
-
-  /*overflow: hidden;*/
+h1 {
+  font-size: 2em;
 }
-
-.carousel .carousel-item, .carousel .carousel .active {
-  height: 400px;
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size:1.5em;
+}
+h4 {
+  font-size: 1.3em;
 }
 
 hr {
   clear: both;
+  border: 1px solid #79b1a7;
 }
 
+p {
+  line-height: 20px;
+}
+
+/***********  Grid Definitions  ********/
 .grid-container {
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
@@ -27,27 +37,11 @@ hr {
                       "news news blog blog form form"
                       "foot foot foot foot foot foot";
 }
-
 header {
   grid-area: header;
   display: flex;
   background: darkOliveGreen;
   justify-content: space-between;
-}
-.site-title, .search-etc {
-  margin: 15px;
-}
-.links {
-  text-align: right;
-}
-.links a {
-  margin-left: 15px;
-}
-.search {
-  margin-top: 10px;s
-}
-.search input {
-  margin-right: 10px;
 }
 nav {
   grid-area: nav;
@@ -56,7 +50,11 @@ nav {
 }
 .car {
   grid-area: car;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: goldenrod;
+
 }
 summary {
   grid-area: sum;
@@ -69,28 +67,22 @@ summary {
   grid-area: blog;
   background: darkCyan;
 }
-
 .blog-form {
   grid-area: form;
   background: cornFlowerBlue;
 }
 
-.blog-heading {
-  margin-bottom: 10px;
-}
 footer {
   grid-area: foot;
   background: oliveDrab;
 }
-nav ul {
-  display: flex;
-  justify-content: flex-start;
-}
-nav li {
-  margin-right:;
-  list-style-type: none;
-  padding: 5px 15px;
-  border-right: 1px solid gray;
+/******* End Grid Definition  *******/
+
+/******* Multi use styles  *******/
+
+.heading {
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .block {
@@ -99,6 +91,77 @@ nav li {
   border-top: 2px solid black;
 }
 
+.block-title {
+  margin-bottom: 20px;
+}
+
+.read-more {
+  float: right;
+}
+
+.title {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Header styles*/
+
+.site-title, .search-etc {
+  margin: 15px;
+  align-self: center;
+}
+.search-etc {
+  align-self: flex-end;
+}
+.links {
+  text-align: right;
+}
+.links a {
+  margin-left: 15px;
+}
+.search {
+  margin-top: 10px;s
+}
+.search input {
+  margin-right: 10px;
+  width: 170px;
+}
+/******** Nav Styles    *********/
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+nav li {
+  list-style-type: none;
+  padding: 10px 18px;
+  border-right: 1px solid gray;
+  vertical-align: middle;
+}
+
+ul {
+  height: 100%;
+}
+
+/******** Summary Styles    *********/
+
+p {
+
+}
+
+/******** Summary Styles    *********/
+
+summary.block {
+  border: none;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+
+/******** Newsletter Styles    *********/
+
 .newsletter h2 {
   display: inline;
 }
@@ -106,9 +169,13 @@ nav li {
 .newsletter img {
   width: 100%;
   border: 1px solid gray;
+  margin-bottom: 12px;
 }
-summary.block {
-  border: none;
+
+/********  Blog Styles   *********/
+
+.blog-heading {
+  margin-bottom: 10px;
 }
 
 .blog.block {
@@ -116,28 +183,30 @@ summary.block {
   border-left: 2px solid black;
 }
 
-.heading {
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
 .blog img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   float: left;
   margin: 7px 15px 10px 0px;
 }
 
-.read-more {
-  float: right;
-}
+/* New Blog form Styles*/
 
 .blog-form input {
-  width: 50%;
+  width: 170px;
   margin-bottom: 10px;
   display: block;
 }
 
+.blog-form p {
+  margin-bottom: 20px;
+}
+
+/* Footer Styles*/
+
 footer span {
   margin-right: 8px;
+}
+footer p {
+  padding-top: 5px;
 }
