@@ -1,0 +1,205 @@
+body {
+  background: lightgray;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size:1.5em;
+}
+h4 {
+  font-size: 1.3em;
+}
+
+hr {
+  clear: both;
+}
+
+p {
+  line-height: 20px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.block {
+  padding:25px;
+  border-top: 2px solid gray;
+}
+
+.block-title {
+  margin-bottom: 20px;
+}
+
+.read-more {
+  float: right;
+}
+
+.title {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Header styles*/
+
+header {
+  height: 150px;
+}
+
+.site-title {
+  margin-top: 25px;
+  padding: 12px 20px;
+  background: silver;
+}
+
+.links {
+  text-align: right;
+}
+
+.links a {
+  margin-left: 15px;
+}
+
+.search-etc {
+  margin-top: 65px;
+  margin-right: -15px;
+}
+
+.search {
+  margin-top: 10px;
+}
+
+.search input:first-of-type {
+  margin-right: 10px;
+  width: 210px;
+}
+
+input[type="submit"] {
+  border-radius: 16px;
+  font-size: .7em;
+  padding: 2px 15px;
+  background: linear-gradient(
+    whiteSmoke,
+    lightGray,
+    whiteSmoke
+  )
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+}
+/******** Nav Styles    *********/
+
+nav {
+  background: whiteSmoke;
+  height: 35px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 5px 18px;
+  border-right: 1px solid lightGray;
+  vertical-align: middle;
+}
+
+ul {
+  height: 100%;
+}
+
+/********** Carousel Styles **********/
+
+#carousel-example-generic img {
+  height: 330px;
+}
+.carousel-item img {
+  display: block;
+  margin: auto;
+}
+
+.car {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 0;
+  margin-left: -15px;
+}
+
+/******** Summary Styles    *********/
+
+/******** Summary Styles    *********/
+
+summary.block {
+  border: none;
+  padding-top: 55px;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+/******** Newsletter Styles    *********/
+
+.newsletter h2 {
+  display: inline;
+}
+
+.newsletter img {
+  width: 100%;
+  border: 1px solid gray;
+  margin-bottom: 12px;
+}
+
+/********  Blog Styles   *********/
+
+.blog-heading {
+  margin-bottom: 10px;
+}
+
+.blog.block {
+  border-right: 2px solid gray;
+  border-left: 2px solid gray
+}
+
+.blog img {
+  height: 80px;
+  width: 80px;
+  float: left;
+  margin: 7px 15px 10px 0px;
+}
+.blog article:first-of-type {
+  padding-bottom: 15px;
+}
+
+/* New Blog form Styles*/
+
+.blog-form input[type=text], .blog-form input[type=email] {
+  width: 210px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.blog-form p {
+  margin-bottom: 20px;
+}
+
+/* Footer Styles*/
+
+footer span {
+  margin-right: 8px;
+}
+footer p {
+  padding-top: 5px;
+}
