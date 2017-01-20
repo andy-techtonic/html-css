@@ -185,7 +185,7 @@ summary.block {
 
 /* New Blog form Styles*/
 
-.blog-form input[type=text], .blog-form input[type=email] {
+.blog-form input[type=text], .blog-form input[type=email], .blog-form input[type=url], textarea {
   width: 210px;
   margin-bottom: 10px;
   display: block;
