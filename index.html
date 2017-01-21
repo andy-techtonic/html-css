@@ -91,8 +91,13 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...<a href="" class="read-more">Read More</a>
         </p>
       </article>
+
       <section class="col-md-4 blog block">
         <h2 class="block-title">From the Blog</h2>
+
+<!--  This is the blog post that gets cloned.
+      This is also where the new post gets appended. ".before()" #blog-template -------->
+
         <article id="blog-template" class="">
           <div class="blog-heading">
             <h3 class="title">
@@ -105,11 +110,9 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse...
             <a href="#" class="read-more">Read More</a>
           </p>
-
-
-
-
         </article>
+<!--  End of the blog-template post. Being wrapped in one element (article) makes it available to clone as a single DOM element.  -->
+
         <hr>
         <article>
           <div class="blog-heading">
@@ -124,9 +127,11 @@
         </article>
       </section>
 
+<!--  This is the form that gets submitted.
+      The values from each input get swapped into the clone to make a new blog post   ------------->
 
       <section class="col-md-4 blog-form block">
-        <h2 class="block-title">Sign Up</h2>
+        <h2 class="block-title">Enter a new Post</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
@@ -147,7 +152,7 @@
         </form>
       </section>
 
-
+<!--  End of form -->
 
     </div>
 
