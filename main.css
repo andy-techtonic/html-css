@@ -182,7 +182,9 @@ summary.block {
 .blog article:first-of-type {
   padding-bottom: 15px;
 }
-
+.blog-post {
+  clear: both;
+}
 /* New Blog form Styles*/
 
 .blog-form input[type=text], .blog-form input[type=email], .blog-form input[type=url], textarea {

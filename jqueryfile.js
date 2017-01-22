@@ -1,28 +1,30 @@
 
-// this line ensures that the dom has rendered before this function runs
+
 $(document).ready(function() {
+  var template = $('#blog-template').clone();
 
-      // make template
-      var template = $('#blog-template').clone();
+  template.attr('id', '');
 
-      // attach event handler to submit button
-      $('#new-blog-input').on('submit', function(event) {       // event provided for following line
-          event.preventDefault();                               // this prevents the page from reloading
+  $('#new-blog-input').on('submit', function(event) {
+      event.preventDefault();
 
-      // grab values of each input
-          var newTitle = $('#title-input').val();
-          var newAuthor = $('#name-input').val();
-          var newContent =$('#content-input').val();
-          var newImage =$('#url-input').val();
+      var newPost = template;
 
-      // change text of each blog part
-          template.find('.title').text(newTitle);
-          template.find('.author').text(newAuthor);
-          template.find('.content').text(newContent);
-          template.find('img').attr('src', newImage);
+      var newTitle = $('#title-input').val();
+      var newAuthor = $('#name-input').val();
+      var newContent =$('#content-input').val();
+      var newImage =$('#url-input').val();
 
-      // put the modified post into the DOM
-          $('#blog-template').before(template);
-      })
+      newPost.find('.title').text(newTitle);
+      newPost.find('.date').text(moment().format("MMM D" + ", " +  "YYYY"));
+      newPost.find('.author').text(newAuthor);
+      newPost.find('.content').text(newContent);
+      newPost.find('img').attr('src', newImage);
+
+      newPost.append('<hr>')
+
+      $('#blog-posts').prepend(newPost);
+  })
+
 
 })
